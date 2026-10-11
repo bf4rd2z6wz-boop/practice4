@@ -13,7 +13,7 @@ std::cout << "Введите число мая (1-31): ";
 std:: cin >> targetDay;
     if ( targetDay < 1 || targetDay > 31) 
     {
-        std::cout << "Ошибка: некорректное число. В мае может быть от 1 до 31 дня." ;
+        std::cout << " В мае может быть от 1 до 31 дня." ;
       
     }
 int currentDay= (targetDay-1+dayOfMonth-1)%7+1;
