@@ -1,15 +1,20 @@
 #include <iostream>
 int main()
 {
-int fullPrice =500000;
-int entrances = 3;
-int flats = 40; 
-int costForOne = fullPrice / (entrances* flats);
-std:: cout << "Приветствуем вас в калькуляторе квартплаты!  " <<"\n";
-std:: cout << "Введите сумму, указанную в квитанции: " << fullPrice << "\n";
-std:: cout << "Сколько подъездов в вашем доме? " << entrances << "\n"; ;
-std:: cout << "Сколько квартир в каждом подъезде? " << flats << "\n";;
-std:: cout << "Каждая квартира должна платить по "  << costForOne  << " руб.";
+int speed;
+int attitude;
+std:: cout << "Введите скорость самолета";
+  std:: cin >> speed;
+ std:: cout << "Введите высоту";
+  std:: cin >> attitude; 
+  if(speed>=750 && speed<==850 && attitude>=9000 && attitude<=9500)
+  {
+    std::cout << "Результат: Самолёт летит ПРАВИЛЬНЫМ эшелоном." 
+    }
+  else 
+  {
+        std::cout << "Результат: Эшелон НЕПРАВИЛЬНЫЙ!"
+  }
 
 
 
