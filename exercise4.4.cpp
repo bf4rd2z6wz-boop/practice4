@@ -6,11 +6,13 @@ int main()
  std:: cin >> requiredAmount;
  if(requiredAmount%100!=0 || requiredAmount < 100)
  {
-    std:: cout << "Выдача ровно " << requiredAmount << "рублей невозможна";
+    std:: cout << "Выдача ровно " << requiredAmount <<  " рублей невозможна";
+  return 1;
  }
 if(requiredAmount>150000)
  {
     std:: cout << "Выдача более 150000 рублей за раз невозможна";
+  return 1;
  }
 int N5000 = requiredAmount/5000;
 requiredAmount = requiredAmount % 5000;
@@ -50,13 +52,5 @@ if(N100>0)
 {
     std:: cout << N100 << " по 100 рублей.";
 }
-
-
-
-
-
-
-
-
-
+return 0;
 }
